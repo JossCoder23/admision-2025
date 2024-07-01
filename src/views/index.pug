@@ -1,0 +1,116 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv='Expires' content='0')
+        meta(http-equiv='Last-Modified' content='0')
+        meta(http-equiv='Cache-Control' content='no-cache, mustrevalidate')
+        meta(http-equiv='Pragma' content='no-cache')
+        title Conversatorios Cayetano
+        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+        script(src='https://www.google.com/recaptcha/api.js' async='' defer='')
+        //- script(async).
+        //-     (function(h,o,t,j,a,r){
+        //-     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        //-     h._hjSettings={hjid:3659234,hjsv:6};
+        //-     a=o.getElementsByTagName('head')[0];
+        //-     r=o.createElement('script');r.async=1;
+        //-     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        //-     a.appendChild(r);
+        //-     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+    body
+        .bloque1#bloque1
+            .bloque1Container
+                .bloque1Container__left
+                    .bloque1Logo
+                        .bloque1_logo1 
+                            img(src="img/logo_one_white.webp", alt="")
+                        .bloque1_logo2 
+                            img(src="img/logo_two.webp", alt="")
+                    .bloque1World
+                        img(src="img/the_world.webp", alt="")
+                    //- .bloque1Image
+                    //-     img(src="img/top_image.webp", alt="")
+                .bloque1Container__right
+                    .bloque1Container__form
+                        .formContainer 
+                            .formTitle
+                                h3 Déjanos tus datos y
+                                h4 nos contactaremos contigo
+                            form.formGrid
+                                .double__form
+                                    input(type="text" placeholder="other")
+                                    input(type="text" placeholder="other")
+                                .double__form
+                                    input(type="text" placeholder="other")
+                                    input(type="text" placeholder="other")
+                                input(type="text" placeholder="other")
+                                input(type="text" placeholder="other")
+                                input(type="text" placeholder="other")
+                                input(type="text" placeholder="other")
+                                input(type="text" placeholder="other")
+                                .terminos
+                                    input#privacyTool3503766000237491098(type='checkbox' autocomplete='off' name='privacyTool' onclick='disableSubmit()' required)
+                                    label#labelCheckbox(for='privacyTool3503766000237491098')
+                                        a(href="https://cayetano.edu.pe/politica-privacidad/" target="_blank") Política de privacidad y términos de servicio
+                                .captcha
+                                    #recap3503766000237491098.g-recaptcha(data-sitekey='6LdqkDoiAAAAALdLtgIzFUQelkS9jGZU4W7gjLHG' data-theme='light' data-callback='rccallback3503766000237491098' captcha-verified='false')
+                                    #recapErr3503766000237491098(style='font-size:12px;color:red;visibility:hidden;') Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.
+                                .button_enviar
+                                    button.button__change
+                                        h3 QUIERO MÁS INFORMACIÓN
+        .bloque2#bloque2
+            .bloque2Container
+                .bloque2Image1
+                    img(src="img/fondo_bloque2.webp", alt="")
+                .bloque2Title
+                    h3 Cayetano es tu mejor opción
+                    h4 Somos prestigio y excelencia para llevar tu talento al máximo nivel
+                .bloque2Slider
+                    .slider__container.swiper.mySwiper
+                        .slider__grid.swiper-wrapper
+                            .slider__item.swiper-slide
+                                .sliderItemInfo
+                                    .itemImage
+                                        img(src="img/bloque2_image1.webp", alt="")
+                                    .itemText
+                                        h3 +62 años de excelencia 
+                                        h4 Cayetano es calidad educativa
+                            .slider__item.swiper-slide
+                                .sliderItemInfo
+                                    .itemImage
+                                        img(src="img/bloque2_image2.webp", alt="")
+                                    .itemText
+                                        h3 +200 convenios internacionales
+                                        h4 Cayetano es experiencias internacionales
+                            .slider__item.swiper-slide
+                                .sliderItemInfo
+                                    .itemImage
+                                        img(src="img/bloque2_image3.webp", alt="")
+                                    .itemText
+                                        h3 +Investigación y patentes
+                                        h4 Cayetano es soluciones innovadoras
+                            .slider__item.swiper-slide
+                                .sliderItemInfo
+                                    .itemImage
+                                        img(src="img/bloque2_image4.webp", alt="")
+                                    .itemText
+                                        h3 +Docentes e investigaciones TOP
+                                        h4 Cayetano son expertos de renombre
+                            .slider__item.swiper-slide
+                                .sliderItemInfo
+                                    .itemImage
+                                        img(src="img/bloque2_image5.webp", alt="")
+                                    .itemText
+                                        h3 +15 talleres extracurriculares
+                                        h4 Cayetano es arte y deporte
+                    .swiper-pagination
+        .bloque3
+        script(src="./js/script.js" async)
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
