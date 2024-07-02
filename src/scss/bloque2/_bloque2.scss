@@ -41,22 +41,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 3rem !important;
+    bottom: 1rem !important;
     @include m.phone_360 {
         bottom: 2.5rem !important;
     }
 }
 
 .bloque2Container {
-   padding: 2.5rem 0;
+  padding: 2.5rem 0 3rem 0;
 }
 
 .bloque2Image1 {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -.2rem;
     img {
-        width: 30rem;
+      width: 100%;
     }
 }
 
@@ -65,18 +65,21 @@
     // background-color: yellow;
     display: grid;
     align-items: center;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 2rem;
     h3, h4 {
         margin: 0;
         text-align: center;
     }
     h3 {
         color: white;
-        font-size: 1.7rem;
-        font-weight: 600;
+        font-size: 1.8rem;
+        font-weight: 700;
     }
     h4 {
-        font-size: 1.3rem;
-        font-weight: 500;
+        font-size: 1.4rem;
+        font-weight: 600;
         padding: 0 2rem;
     }
 }
@@ -137,7 +140,7 @@
     width: 100%;
     align-content: center;
     justify-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     @include m.tablet_760 {
         // padding-bottom: 8rem;
     }
@@ -147,80 +150,104 @@
   }
   
   //ancho-individual
-  .sliderItemInfo {
-    width: 65%;
-    height: 25rem;
-    // background-color: yellow;
-    display: grid;
-    grid-template-rows: auto auto;
-    // justify-content: center;
-    // align-items: center;
-    @include m.phone_360 {
-      width: 64%;
-    }
-    @include m.phone_375 {
-      width: 61%;
-    }
-    @include m.phone_390 {
-      width: 58%;
-    }
-    @include m.phone_400 {
-      width: 56%;
-    }
-    @include m.phone_428 {
-      width: 54%;
-    }
-    @include m.phone_480 {
-      width: 45%;
-    }
-    @include m.tablet_760 {
-      width: 80%;
-    }
-    @include m.desktop_1020 {
-      height: 37rem;
-      width: 100%;
-    }
-    @include m.desktop_1280 {
-      width: 82%;
-      height: 41rem;
-    }
-    @include m.desktop_1440 {
-      width: 80%;
-      height: 43rem;
-    }
-    @include m.desktop_1920 {
-      width: 73%;
-      // height: 41rem;
-    }
-    .itemImage {
-        // background-color: green;
-        height: 19rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            width: 17rem;
-        }
-    }
-    .itemText {
-        height: 6rem;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        h3, h4 {
-            display: grid;
-            height: 100%;
-            align-items: center;
-            text-align: center;
-            margin: 0;
-        }
-        h3 {
-            color: white;
-            font-size: 1.6rem;
-            font-weight: 600;
-        }
-        h4 {
-            font-size: 1.5rem;
-            font-weight: 500;
-        }
+.sliderItemInfo {
+  width: 65%;
+  height: 25rem;
+  // background-color: yellow;
+  display: grid;
+  grid-template-rows: auto auto;
+  // justify-content: center;
+  // align-items: center;
+  @include m.phone_360 {
+    width: 64%;
+  }
+  @include m.phone_375 {
+    width: 61%;
+  }
+  @include m.phone_390 {
+    width: 58%;
+  }
+  @include m.phone_400 {
+    width: 56%;
+  }
+  @include m.phone_428 {
+    width: 54%;
+  }
+  @include m.phone_480 {
+    width: 45%;
+  }
+  @include m.tablet_760 {
+    width: 80%;
+  }
+  @include m.desktop_1020 {
+    height: 37rem;
+    width: 100%;
+  }
+  @include m.desktop_1280 {
+    width: 82%;
+    height: 41rem;
+  }
+  @include m.desktop_1440 {
+    width: 80%;
+    height: 43rem;
+  }
+  @include m.desktop_1920 {
+    width: 73%;
+    // height: 41rem;
+  }
+  .itemImage {
+    // background-color: green;
+    height: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 17rem;
     }
   }
+  .itemText {
+    height: 6rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    h3, h4 {
+      display: grid;
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+    h3 {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+// .bloque2Other {
+//   height: 3rem;
+//   background-color: v.$color1;
+// }
+
+.swiper-button-next {
+  height: 1rem;
+  width: 1rem;
+  color: black !important;
+  position: relative;
+  right: 2rem !important;
+  top: 60% !important;
+  // background-color: blue;
+}
+.swiper-button-prev {
+  height: 1rem;
+  width: 1rem;
+  color: black !important;
+  position: relative;
+  left: 2rem !important;
+  top: 60% !important;
+  // background-color: blue;
+}

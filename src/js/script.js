@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
     let container1 = document.getElementById('bloque1');
     let containerTop = document.querySelector('.bloque1Container__left');
     let container2 = document.getElementById('bloque2');
+    let container4 = document.querySelector('.bloque4');
     let button1 = document.querySelector('.button__change')
     window.addEventListener("scroll", (e) => {
         // console.log(window.scrollY);
@@ -10,17 +11,51 @@ window.addEventListener("load", () => {
             containerTop.classList.add('backgroundRepeat');
             container2.classList.add('backgroundRepeat');
             button1.classList.add('backgroundRepeat');
+            container4.classList.add('backgroundRepeat');
         } else {
             container1.classList.remove('backgroundRepeat');
             containerTop.classList.remove('backgroundRepeat');
             container2.classList.remove('backgroundRepeat');
             button1.classList.remove('backgroundRepeat');
+            container4.classList.remove('backgroundRepeat');
         }
     })
 
     var slider1 = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="bullet ' + className + '"></span>';
+            }
+        },
+        breakpoints: {
+            760: {
+                slidesPerView: 2,
+                slidesPerColumn: 1
+            },
+            999: {
+                slidesPerView: 4,
+                slidesPerColumn: 1
+            },
+            1280: {
+                slidesPerView: 4,
+                slidesPerColumn: 1
+            }
+        }
+    });
+    
+    var slider2 = new Swiper(".mySwiper2", {
+        navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2"
+        },
+        pagination: {
+            el: ".swiper-pagination2",
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="bullet ' + className + '"></span>';
