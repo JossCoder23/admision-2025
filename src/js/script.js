@@ -77,6 +77,34 @@ window.addEventListener("load", () => {
         }
     });
 
+    var slider3 = new Swiper(".mySwiper3", {
+        navigation: {
+            nextEl: ".swiper-button-next3",
+            prevEl: ".swiper-button-prev3"
+        },
+        pagination: {
+            el: ".swiper-pagination3",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="bullet ' + className + '"></span>';
+            }
+        },
+        breakpoints: {
+            760: {
+                slidesPerView: 2,
+                slidesPerColumn: 1
+            },
+            999: {
+                slidesPerView: 4,
+                slidesPerColumn: 1
+            },
+            1280: {
+                slidesPerView: 4,
+                slidesPerColumn: 1
+            }
+        }
+    });
+
 })
 
 
