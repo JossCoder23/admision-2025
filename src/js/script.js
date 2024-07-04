@@ -105,6 +105,34 @@ window.addEventListener("load", () => {
         }
     });
 
+    var slider4 = new Swiper(".mySwiper4", {
+        navigation: {
+            nextEl: ".swiper-button-next4",
+            prevEl: ".swiper-button-prev4"
+        },
+        pagination: {
+            el: ".swiper-pagination4",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="bullet ' + className + '"></span>';
+            }
+        },
+        breakpoints: {
+            760: {
+                slidesPerView: 2,
+                slidesPerColumn: 1
+            },
+            999: {
+                slidesPerView: 4,
+                slidesPerColumn: 1
+            },
+            1280: {
+                slidesPerView: 4,
+                slidesPerColumn: 1
+            }
+        }
+    });
+
 })
 
 

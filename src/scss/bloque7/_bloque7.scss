@@ -1,0 +1,80 @@
+.bloque7 {
+    background-color: purple;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloque7Other {
+    height: 3rem;
+    background-color: white;
+}
+
+.bloque7Image {
+    position: absolute;
+    img {
+        width: 100%;
+    }
+}
+
+.bloque7Container {
+    height: auto;
+    overflow: hidden;
+    background-color: red;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque7Item {
+    height: auto;
+    background-color: yellow;
+    width: 90%;
+}
+
+.bloque7Button {
+    background-color: green;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+} 
+
+.bloque7ButtonItem {
+    background-color: purple;
+    width: 20rem;
+    height: 4rem; 
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.bloque7ButtonItemText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        margin: 0;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+}
+
+.bloque7ButtonItemIcon {
+    background-color: red;
+}
+
+.bloque7Grid {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    column-gap: 1rem;
+}
+
+.bloque7GridImage {
+    img {
+        width: 100%;
+    }
+}

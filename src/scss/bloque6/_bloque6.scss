@@ -1,4 +1,256 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .bloque6 {
-    height: 40rem;
-    background-color: purple;
+    height: auto;
+    // background-color: purple;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloque6Container {
+    padding: 4.5rem 0 3.5rem 0;
+}
+
+.bloque6Title {
+    height: 10rem;
+    // background-color: green;
+    display: grid;
+    text-align: center;
+    h3, h4 {
+        margin: 0;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: 1.9rem;
+        padding: 0 8rem;
+        span {
+            color: v.$color1;
+        }
+    }
+    h4 {
+        font-size: 1.2rem;
+        padding: 0 5rem;
+    }
+}
+
+.bloque6Slider {
+    @include m.desktop_1020 {
+      height: auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    @include m.desktop_1360 {
+      margin-top: 4rem;
+    }
+  }
+  
+  .slider__container4 {
+    height: auto;
+    position: relative;
+    // max-width: v.$max-width;
+    width: 100%;
+    // background-color: red;
+    @include m.tablet_760 {
+      max-width: 55rem;
+    }
+    @include m.desktop_1000 {
+      overflow: hidden;
+    }
+    @include m.desktop_1020 {
+      // max-width: v.$max-width-1020;
+      max-width: 95rem;
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .slider__grid4 {
+    position: relative;
+    display: flex;
+    height: auto;
+  }
+  
+  .bloque3Title {
+      height: 6rem;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      text-align: center;
+      h3, h4 {
+          margin: 0;
+      }
+      h3 {
+          font-size: 1.7rem;
+      }
+      h4 {
+          font-size: 1.6rem;
+          color: v.$color1;
+      }
+  }
+  
+  .eventsContainer__grid .swiper-wrapper {
+      transition-timing-function: linear;
+  }
+  // .swiper-wrapper {
+  //     @include m.desktop_1020 {
+  //         height: auto !important;
+  //     }
+  // }
+  
+  .slider__item4 {
+      margin-top: 3rem;
+      height: auto;
+      position: relative;
+      display: grid !important;
+      width: 100%;
+      align-content: center;
+      justify-items: center;
+      @include m.tablet_760 {
+          // padding-bottom: 8rem;
+      }
+      @include m.desktop_1020 {
+          padding-bottom: 0;
+      }
+    }
+    
+    //ancho-individual
+  .sliderItemInfo4 {
+    width: 60%;
+    height: auto;
+    // background-color: green;
+    // background-color: yellow;
+    height: auto;
+    display: grid;
+    position: relative;
+    grid-template-rows: 14rem 6.5rem;
+    @include m.phone_360 {
+      width: 64%;
+    }
+    @include m.phone_375 {
+      width: 61%;
+    }
+    @include m.phone_390 {
+      width: 58%;
+    }
+    @include m.phone_400 {
+      width: 56%;
+    }
+    @include m.phone_428 {
+      width: 54%;
+    }
+    @include m.phone_480 {
+      width: 45%;
+    }
+    @include m.tablet_760 {
+      width: 80%;
+    }
+    @include m.desktop_1020 {
+      height: 37rem;
+      width: 100%;
+    }
+    @include m.desktop_1280 {
+      width: 82%;
+      height: 41rem;
+    }
+    @include m.desktop_1440 {
+      width: 80%;
+      height: 43rem;
+    }
+    @include m.desktop_1920 {
+      width: 73%;
+      // height: 41rem;
+    }
+  }
+
+  .bloque6Image {
+    img {
+        width: 100.5%;
+    }
+    .molina {
+        position: relative;
+        bottom: -1rem;
+        width: 100.4%;
+    }
+    .miraflores {
+        width: 100%;
+        position: relative;
+        bottom: -.8rem;
+    }
+    .san_isidro {
+        position: relative;
+        bottom: -.4rem;
+    }
+  }
+
+  .bloque6Description {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    row-gap: .3rem;
+    padding-bottom: 1rem;
+    background-color: v.$color1;
+    h3, h4 {
+        margin: 0;
+        display: grid;
+        color: white;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: 1.6rem;
+        align-items: flex-end;
+    }
+    h4 {
+        align-items: flex-start;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0 1rem;
+    }
+  }
+
+  .swiper-button-next4 {
+    height: 4.5rem;
+    width: 2.3rem;
+    color: black !important;
+    position: absolute !important;
+    top: 55%;
+    right: 2rem !important;
+    text-rendering: auto;
+    z-index: 10;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+  .swiper-button-prev4 {
+    height: 4.5rem;
+    width: 2.3rem;
+    color: black !important;
+    position: absolute;
+    left: 2rem !important;
+    top: 55%;
+    text-rendering: auto;
+    z-index: 10;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+  .swiper-pagination4 {
+    width: 20rem;
+    height: 3rem;
+    position: relative;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: .5rem !important;
+    z-index: 800;
+    @include m.phone_360 {
+        bottom: 2.5rem !important;
+    }
 }
