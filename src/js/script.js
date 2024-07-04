@@ -3,7 +3,42 @@ window.addEventListener("load", () => {
     let containerTop = document.querySelector('.bloque1Container__left');
     let container2 = document.getElementById('bloque2');
     let container4 = document.querySelector('.bloque4');
-    let button1 = document.querySelector('.button__change')
+    let gestion = document.querySelector('.bloque7ButtonItem1');
+    let gestionContenido = document.querySelector('.bloque7GridContainer1');
+    let gestionContainer = document.querySelector('.bloque7GridGroup1');
+    let ingenieria = document.querySelector('.bloque7ButtonItem2');
+    let ingenieriaContenido = document.querySelector('.bloque7GridContainer2');
+    let ingenieriaContainer = document.querySelector('.bloque7GridGroup2');
+    let educacion = document.querySelector('.bloque7ButtonItem3');
+    let educacionContenido = document.querySelector('.bloque7GridContainer3');
+    let educacionContainer = document.querySelector('.bloque7GridGroup3');
+    let ciencias = document.querySelector('.bloque7ButtonItem4');
+    let cienciasContenido = document.querySelector('.bloque7GridContainer2');
+    let cienciasContainer = document.querySelector('.bloque7GridGroup4');
+    let salud = document.querySelector('.bloque7ButtonItem5');
+    let saludContenido = document.querySelector('.bloque7GridGroup5');
+    let button1 = document.querySelector('.button__change');
+
+    gestion.addEventListener("click", () => {
+        gestionContenido.classList.toggle('bloque7GridGroupActivate');
+        gestionContainer.classList.toggle('bloque7GridGroupToggle');
+    })
+    ingenieria.addEventListener("click", () => {
+        ingenieriaContenido.classList.toggle('bloque7GridGroupActivate');
+        ingenieriaContainer.classList.toggle('bloque7GridGroupToggle');
+    })
+    educacion.addEventListener("click", () => {
+        educacionContenido.classList.toggle('bloque7GridGroupActivate');
+        educacionContainer.classList.toggle('bloque7GridGroupToggle');
+    })
+    ciencias.addEventListener("click", () => {
+        cienciasContenido.classList.toggle('bloque7GridGroupActivate');
+        cienciasContainer.classList.toggle('bloque7GridGroupToggle');
+    })
+    salud.addEventListener("click", () => {
+        saludContenido.classList.toggle('bloque7GridGroupActivate')
+    })
+
     window.addEventListener("scroll", (e) => {
         // console.log(window.scrollY);
         if(window.scrollY > 350) {
