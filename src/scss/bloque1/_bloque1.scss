@@ -17,6 +17,15 @@
     display: grid;
     grid-template-rows: repeat(2, auto);
     padding-top: 1rem;
+    @include m.phone_390 {
+        width: 83%;
+    }
+    @include m.phone_414 {
+        width: 80%;
+    }
+    @include m.tablet_768 {
+        width: 70%;
+    }
 }
 
 .bloque1Container__left {
@@ -24,6 +33,9 @@
     transition: background-color 1.5s ease;
     background-color: v.$color1;
     position: relative;
+    @include m.phone_375 {
+        height: 25rem;
+    }
 }
 
 .bloque1Logo {
@@ -35,11 +47,17 @@
     .bloque1_logo1 {
         img {
             width: 13rem;
+            @include m.phone_375 {
+                width: 16rem;
+            }
         }
     }
     .bloque1_logo2 {
         img {
             width: 12rem;
+            @include m.phone_375 {
+                width: 15rem;
+            }
         }
     }
 }
@@ -50,8 +68,14 @@
     // background-color: black;
     top: 8rem;
     left: .5rem;
+    @include m.phone_375 {
+        top: 10rem;
+    }
     img {
         width: 10rem;
+        @include m.phone_375 {
+            width: 13rem;
+        }
     }
 }
 
@@ -72,12 +96,18 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     height: 5rem;
+    @include m.phone_375 {
+        bottom: 2.5rem;
+    }
     h4, h3 {
         margin: 0;
         display: flex;
         align-items: center;
         font-size: 1.8rem;
         color: white;
+        @include m.phone_375 {
+            font-size: 2rem;
+        }
     }
     h4 {
         font-weight: 400;
@@ -95,6 +125,9 @@
     height: auto;
     width: 100%;
     border-radius: 1rem;
+    // @include m.phone_390 {
+    //     width: 90%;
+    // }
 }
 
 .formContainer {
@@ -103,6 +136,9 @@
     height: auto;
     padding: 2rem 2rem;
     overflow: hidden;
+    @include m.phone_360 {
+        width: 100%;
+    }
 }
 
 .formTitle {
@@ -120,6 +156,9 @@
     h3 {
         font-size: 1.6rem;
         font-weight: 700;
+        @include m.phone_375 {
+            font-size: 1.8rem;
+        }
     }
     h4 {
         font-size: 1.6rem;
@@ -209,7 +248,7 @@
     transform: scale(0.67);
     transform-origin: 0 0;
     @include m.phone_360 {
-        padding-left: 7.7rem; 
+        padding-left: 6.7rem; 
     }
     @include m.phone_400 {
         padding-left: 8.5rem;    

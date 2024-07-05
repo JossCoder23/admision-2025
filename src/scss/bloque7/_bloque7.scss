@@ -81,6 +81,9 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     border-radius: 1rem;
     display: grid;
     grid-template-columns: 75% 25%;
+    @include m.phone_390 {
+        width: 23rem;
+    }
    
 }
 
@@ -121,11 +124,25 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
         grid-template-columns: 45% 5% 50%;
         grid-template-rows: none;
     }
+    .bloque7GridContainerSalud {
+        display: grid !important;
+        transition: all .5s ease-in;
+        grid-template-columns: 45% 5% 50%;
+        grid-template-rows: none;
+    }
+    
 }
 
 .bloque7GridGroupToggle {
     display: grid;
     height: 17rem;
+    transition: height .5s ease;
+    // height: 30rem;
+}
+
+.bloque7GridGroupToggle2 {
+    display: grid;
+    height: 22rem;
     transition: height .5s ease;
     // height: 30rem;
 }

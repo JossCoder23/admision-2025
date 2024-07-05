@@ -27,6 +27,21 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    @include m.phone_360 {
+        padding: 3rem 0;
+    }
+    @include m.phone_375 {
+        padding: 5rem 0;
+    }
+    @include m.phone_390 {
+        padding: 6rem 0;
+    }
+    @include m.phone_414 {
+        padding: 8rem 0;
+    }
+    @include m.phone_428 {
+        padding: 9rem 0;
+    }
 }
 
 .bloque5Title {
@@ -245,6 +260,12 @@
     @include m.phone_360 {
         bottom: 2.5rem !important;
     }
+    @include m.phone_375 {
+        bottom: 1.5rem !important;
+    }
+    @include m.phone_414 {
+        bottom: .5rem !important;
+    }
 }
 
 .swiper-button-next3 {
@@ -256,6 +277,9 @@
     right: 2rem !important;
     text-rendering: auto;
     z-index: 10;
+    @include m.phone_380 {
+        right: 3rem !important;
+      }
     img {
         height: 100%;
         width: 100%;
@@ -271,6 +295,9 @@
     top: 40%;
     text-rendering: auto;
     z-index: 10;
+    @include m.phone_380 {
+        left: 3rem !important;
+    }
     img {
         height: 100%;
         width: 100%;

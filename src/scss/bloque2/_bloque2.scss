@@ -45,10 +45,19 @@
     @include m.phone_360 {
         bottom: 2.5rem !important;
     }
+    @include m.phone_375 {
+        bottom: .5rem !important;
+    }
+    @include m.tablet_768 {
+      bottom: 4.5rem !important;
+    }
 }
 
 .bloque2Container {
   padding: 2.5rem 0 3rem 0;
+  @include m.tablet_768 {
+    padding: 4.5rem 0 10rem 0;
+  }
 }
 
 .bloque2Image1 {
@@ -57,6 +66,13 @@
     bottom: -.2rem;
     img {
       width: 100%;
+      
+    }
+    .image_movile {
+      display: grid;
+      @include m.tablet_768 {
+        display: none;
+      }
     }
 }
 
@@ -76,11 +92,17 @@
         color: white;
         font-size: 1.8rem;
         font-weight: 700;
+        @include m.tablet_768 {
+          font-size: 2.3rem;
+        }
     }
     h4 {
         font-size: 1.4rem;
         font-weight: 600;
         padding: 0 2rem;
+        @include m.tablet_768 {
+          font-size: 2rem;
+        }
     }
 }
 
@@ -220,10 +242,16 @@
       color: white;
       font-size: 1.6rem;
       font-weight: 600;
+      @include m.tablet_768 {
+        font-size: 2rem;
+      }
     }
     h4 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 500;
+      @include m.tablet_768 {
+        font-size: 1.7rem;
+      }
     }
   }
 }
@@ -241,6 +269,12 @@
   right: 2rem !important;
   top: 60% !important;
   // background-color: blue;
+  @include m.phone_380 {
+    right: 4rem !important;
+  }
+  @include m.tablet_768 {
+    right: 6rem !important;
+  }
 }
 .swiper-button-prev {
   height: 1rem;
@@ -250,4 +284,10 @@
   left: 2rem !important;
   top: 60% !important;
   // background-color: blue;
+  @include m.phone_380 {
+    left: 4rem !important;
+  }
+  @include m.tablet_768 {
+    left: 6rem !important;
+  }
 }

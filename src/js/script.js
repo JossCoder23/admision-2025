@@ -16,7 +16,8 @@ window.addEventListener("load", () => {
     let cienciasContenido = document.querySelector('.bloque7GridContainer2');
     let cienciasContainer = document.querySelector('.bloque7GridGroup4');
     let salud = document.querySelector('.bloque7ButtonItem5');
-    let saludContenido = document.querySelector('.bloque7GridGroup5');
+    let saludContenido = document.querySelector('.bloque7GridContainerSalud');
+    let saludContainer = document.querySelector('.bloque7GridGroup5');
     let button1 = document.querySelector('.button__change');
 
     gestion.addEventListener("click", () => {
@@ -36,7 +37,8 @@ window.addEventListener("load", () => {
         cienciasContainer.classList.toggle('bloque7GridGroupToggle');
     })
     salud.addEventListener("click", () => {
-        saludContenido.classList.toggle('bloque7GridGroupActivate')
+        saludContenido.classList.toggle('bloque7GridGroupActivate');
+        saludContainer.classList.toggle('bloque7GridGroupToggle2');
     })
 
     window.addEventListener("scroll", (e) => {

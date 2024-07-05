@@ -71,8 +71,12 @@
     h4 {
         font-size: 1.6rem;
         color: v.$color1;
+        @include m.phone_360 {
+          padding: 0 4rem;
+        }
+      }
     }
-}
+
 
 .eventsContainer__grid .swiper-wrapper {
     transition-timing-function: linear;
@@ -211,6 +215,9 @@
     right: 2rem !important;
     text-rendering: auto;
     z-index: 10;
+    @include m.phone_380 {
+      right: 4rem !important;
+    }
     img {
         height: 100%;
         width: 100%;
@@ -230,6 +237,9 @@
     top: 50%;
     text-rendering: auto;
     z-index: 10;
+    @include m.phone_380 {
+      left: 4rem !important;
+    }
     img {
         height: 100%;
         width: 100%;
@@ -252,5 +262,8 @@
     z-index: 800;
     @include m.phone_360 {
         bottom: 2.5rem !important;
+    }
+    @include m.phone_375 {
+        bottom: 4.5rem !important;
     }
 }
