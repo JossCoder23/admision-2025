@@ -126,6 +126,10 @@ html(lang="es")
                         | ciencias, educación y salud.
                 .bloque4__image
                     img.back_movile_video(src="img/video_image.webp", alt="")
+                .bloque4Desktop__image1
+                    img.back_desktop_video1(src="img/bloque4back1.webp", alt="")
+                .bloque4Desktop__image2
+                    img.back_desktop_video2(src="img/bloque4back2.webp", alt="")
                 .bloque4__video
                     .video__container
                         img.video_movile(src="img/video_back.webp", alt="")
@@ -211,6 +215,10 @@ html(lang="es")
                         img(src="img/arrow_left.webp", alt="")
                     .swiper-pagination2
         .bloque5
+            .bloque5ImageDesktop1
+                img(src="img/testimonioDesktopImage1.webp", alt="")
+            .bloque5ImageDesktop2
+                img(src="img/testimonioDesktopImage2.webp", alt="")
             .bloque5Image
                 img(src="img/testimonio_back_movile.webp", alt="")
             .bloque5Other
@@ -311,93 +319,117 @@ html(lang="es")
                 img(src="img/bloque6_back.webp", alt="")
             .bloque7Other
             .bloque7Container
-                .bloque7Item
-                    .bloque7Button
-                        .bloque7ButtonItem.bloque7ButtonItem1
-                            .bloque7ButtonItemText
-                                h3 Gestión
-                            .bloque7ButtonItemIcon
-                                img(src="img/arrow_bottom.webp", alt="")
-                    .bloque7Grid.bloque7GridGroup1
-                        .bloque7GridContainer.bloque7GridContainer1
-                            .bloque7GridImage
-                                img(src="img/bloque6_gestion.webp", alt="")
-                            .bloque7GridDescription
-                                .bloque7GridDescriptionContainer
-                                    ul 
-                                        li Administración (nuevo)
-                .bloque7Item
-                    .bloque7Button
-                        .bloque7ButtonItem.bloque7ButtonItem2
-                            .bloque7ButtonItemText
-                                h3 Ingeniería
-                            .bloque7ButtonItemIcon
-                                img(src="img/arrow_bottom.webp", alt="")
-                    .bloque7Grid.bloque7GridGroup2
-                        .bloque7GridContainer.bloque7GridContainer2
-                            .bloque7GridImage
-                                img(src="img/bloque6_ingenierias.webp", alt="")
-                            .bloque7GridDescription
-                                .bloque7GridDescriptionContainer
-                                    ul 
-                                        li Ing. Industrial (nuevo)
-                                        li Ing. Ambiental 
-                                        li Ing. Informática 
-                                        li Ing. Biomédica* 
-                .bloque7Item
-                    .bloque7Button
-                        .bloque7ButtonItem.bloque7ButtonItem3
-                            .bloque7ButtonItemText
-                                h3 Educación
-                            .bloque7ButtonItemIcon
-                                img(src="img/arrow_bottom.webp", alt="")
-                    .bloque7Grid.bloque7GridGroup3
-                        .bloque7GridContainer.bloque7GridContainer3
-                            .bloque7GridImage
-                                img(src="img/bloque6_educacion.webp", alt="")
-                            .bloque7GridDescription
-                                .bloque7GridDescriptionContainer
-                                    ul 
-                                        li Educación (nuevo)
-                .bloque7Item
-                    .bloque7Button
-                        .bloque7ButtonItem.bloque7ButtonItem4
-                            .bloque7ButtonItemText
-                                h3 Ciencias
-                            .bloque7ButtonItemIcon
-                                img(src="img/arrow_bottom.webp", alt="")
-                    .bloque7Grid.bloque7GridGroup4
-                        .bloque7GridContainer.bloque7GridContainer4
-                            .bloque7GridImage
-                                img(src="img/bloque6_ciencias.webp", alt="")
-                            .bloque7GridDescription
-                                .bloque7GridDescriptionContainer
-                                    ul 
-                                        li Biología
-                                        li Nutrición
-                                        li Farmacia y Bioquímica
-                .bloque7Item
-                    .bloque7Button
-                        .bloque7ButtonItem.bloque7ButtonItem5
-                            .bloque7ButtonItemText
-                                h3 Salud
-                            .bloque7ButtonItemIcon
-                                img(src="img/arrow_bottom.webp", alt="")
-                    .bloque7Grid.bloque7GridGroup5
-                        .bloque7GridContainer.bloque7GridContainerSalud
-                            .bloque7GridImage
-                                img(src="img/bloque6_salud.webp", alt="")
-                            .bloque7GridDescription
-                                .bloque7GridDescriptionContainer
-                                    ul 
-                                        li Medicina
-                                        li Enfermería
-                                        li Estomatología
-                                        li Psicología
-                                        li Medicina Veterinaria y Zootecnia
-                                        li Terapia Física y Rehabilitación
-                                        li Radiología
-                                        li Laboratorio Clínico y Anatomía Patológica
+                .bloque7Container__left
+                    .bloque7Item
+                        .bloque7Button
+                            .bloque7ButtonItem.bloque7ButtonItem1
+                                .bloque7ButtonItemText
+                                    h3 Gestión
+                                .bloque7ButtonItemIcon
+                                    img(src="img/arrow_bottom.webp", alt="")
+                        .bloque7Grid.bloque7GridGroup1
+                            .bloque7GridContainer.bloque7GridContainer1
+                                .bloque7GridImage
+                                    img(src="img/bloque6_gestion.webp", alt="")
+                                .bloque7GridDescription
+                                    .bloque7GridDescriptionContainer
+                                        ul 
+                                            li Administración (nuevo)
+                    .bloque7Item
+                        .bloque7Button
+                            .bloque7ButtonItem.bloque7ButtonItem2
+                                .bloque7ButtonItemText
+                                    h3 Ingeniería
+                                .bloque7ButtonItemIcon
+                                    img(src="img/arrow_bottom.webp", alt="")
+                        .bloque7Grid.bloque7GridGroup2
+                            .bloque7GridContainer.bloque7GridContainer2
+                                .bloque7GridImage
+                                    img(src="img/bloque6_ingenierias.webp", alt="")
+                                .bloque7GridDescription
+                                    .bloque7GridDescriptionContainer
+                                        ul 
+                                            li Ing. Industrial (nuevo)
+                                            li Ing. Ambiental 
+                                            li Ing. Informática 
+                                            li Ing. Biomédica* 
+                    .bloque7Item
+                        .bloque7Button
+                            .bloque7ButtonItem.bloque7ButtonItem3
+                                .bloque7ButtonItemText
+                                    h3 Educación
+                                .bloque7ButtonItemIcon
+                                    img(src="img/arrow_bottom.webp", alt="")
+                        .bloque7Grid.bloque7GridGroup3
+                            .bloque7GridContainer.bloque7GridContainer3
+                                .bloque7GridImage
+                                    img(src="img/bloque6_educacion.webp", alt="")
+                                .bloque7GridDescription
+                                    .bloque7GridDescriptionContainer
+                                        ul 
+                                            li Educación (nuevo)
+                .bloque7Container__right
+                    .bloque7Item
+                        .bloque7Button
+                            .bloque7ButtonItem.bloque7ButtonItem4
+                                .bloque7ButtonItemText
+                                    h3 Ciencias
+                                .bloque7ButtonItemIcon
+                                    img(src="img/arrow_bottom.webp", alt="")
+                        .bloque7Grid.bloque7GridGroup4
+                            .bloque7GridContainer.bloque7GridContainer4
+                                .bloque7GridImage
+                                    img(src="img/bloque6_ciencias.webp", alt="")
+                                .bloque7GridDescription
+                                    .bloque7GridDescriptionContainer
+                                        ul 
+                                            li Biología
+                                            li Nutrición
+                                            li Farmacia y Bioquímica
+                    .bloque7Item
+                        .bloque7Button
+                            .bloque7ButtonItem.bloque7ButtonItem5
+                                .bloque7ButtonItemText
+                                    h3 Salud
+                                .bloque7ButtonItemIcon
+                                    img(src="img/arrow_bottom.webp", alt="")
+                        .bloque7Grid.bloque7GridGroup5
+                            .bloque7GridContainer.bloque7GridContainerSalud
+                                .bloque7GridImage
+                                    img(src="img/bloque6_salud.webp", alt="")
+                                .bloque7GridDescription
+                                    .bloque7GridDescriptionContainer
+                                        ul 
+                                            li Medicina
+                                            li Enfermería
+                                            li Estomatología
+                                            li Psicología
+                                            li Medicina Veterinaria y Zootecnia
+                                            li Terapia Física y Rehabilitación
+                                            li Radiología
+                                            li Laboratorio Clínico y Anatomía Patológica
+                    .bloque7ItemOther
+                        .bloque7Button
+                            .bloque7ButtonItem.bloque7ButtonItem5
+                                .bloque7ButtonItemText
+                                    h3 Salud
+                                .bloque7ButtonItemIcon
+                                    img(src="img/arrow_bottom.webp", alt="")
+                        .bloque7Grid.bloque7GridGroup5
+                            .bloque7GridContainer.bloque7GridContainerSalud
+                                .bloque7GridImage
+                                    img(src="img/bloque6_salud.webp", alt="")
+                                .bloque7GridDescription
+                                    .bloque7GridDescriptionContainer
+                                        ul 
+                                            li Medicina
+                                            li Enfermería
+                                            li Estomatología
+                                            li Psicología
+                                            li Medicina Veterinaria y Zootecnia
+                                            li Terapia Física y Rehabilitación
+                                            li Radiología
+                                            li Laboratorio Clínico y Anatomía Patológica
         footer
             .footerContainer
                 .footerImage

@@ -76,13 +76,13 @@ window.addEventListener("load", () => {
                 slidesPerColumn: 1
             },
             999: {
-                slidesPerView: 4,
+                slidesPerView: 5,
                 slidesPerColumn: 1
             },
-            1280: {
-                slidesPerView: 4,
-                slidesPerColumn: 1
-            }
+            // 1280: {
+            //     slidesPerView: 4,
+            //     slidesPerColumn: 1
+            // }
         }
     });
     
@@ -104,13 +104,9 @@ window.addEventListener("load", () => {
                 slidesPerColumn: 1
             },
             999: {
-                slidesPerView: 4,
+                slidesPerView: 2,
                 slidesPerColumn: 1
             },
-            1280: {
-                slidesPerView: 4,
-                slidesPerColumn: 1
-            }
         }
     });
 
@@ -132,13 +128,9 @@ window.addEventListener("load", () => {
                 slidesPerColumn: 1
             },
             999: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 slidesPerColumn: 1
             },
-            1280: {
-                slidesPerView: 4,
-                slidesPerColumn: 1
-            }
         }
     });
 
@@ -169,6 +161,12 @@ window.addEventListener("load", () => {
             }
         }
     });
+
+    let slides = document.querySelectorAll('.slider__item');
+
+    // if( window.screen.width > 1019 ) {
+    //     alert("ya me pase")
+    // }
 
 })
 

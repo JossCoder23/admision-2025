@@ -9,6 +9,9 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    @include m.tablet_768 {
+      margin-top: 5rem;
+    }
 }
 
 .bloque3Container {
@@ -218,6 +221,9 @@
     @include m.phone_380 {
       right: 4rem !important;
     }
+    @include m.tablet_768 {
+      right: 6rem !important;
+    }
     img {
         height: 100%;
         width: 100%;
@@ -239,6 +245,9 @@
     z-index: 10;
     @include m.phone_380 {
       left: 4rem !important;
+    }
+    @include m.tablet_768 {
+      left: 6rem !important;
     }
     img {
         height: 100%;

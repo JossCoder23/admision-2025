@@ -12,6 +12,9 @@
     background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 14%);
     margin-top: 2rem;
+    @include m.tablet_768 {
+        justify-items: center;
+    }
 }
 
 .bloque7Other {
@@ -37,6 +40,24 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     justify-items: center;
     row-gap: 1rem;
     padding-bottom: 2rem;
+    @include m.tablet_768 {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+}
+
+.bloque7Container__left {
+    @include m.tablet_768 {
+        // display: grid;
+        // justify-items: center;
+    }
+}
+
+.bloque7Container__right {
+    @include m.tablet_768 {
+        // display: grid;
+        // justify-items: center;
+    }
 }
 
 .bloque7Item {
@@ -81,6 +102,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     border-radius: 1rem;
     display: grid;
     grid-template-columns: 75% 25%;
+    cursor: pointer;
     @include m.phone_390 {
         width: 23rem;
     }
@@ -188,4 +210,8 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
             color: white;
         }
     }
+}
+
+.bloque7ItemOther {
+    visibility: hidden;
 }
