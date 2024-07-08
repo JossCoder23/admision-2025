@@ -12,8 +12,27 @@
     @include m.desktop_1020 {
         padding-bottom: 0;
         height:  60rem;
-        background: rgb(255,12,41);     
-        background: linear-gradient(90deg, rgba(255,12,41,1) 50%, rgba(253,29,29,1) 50%, rgba(255,255,255,1) 50%);      
+        background-color: v.$color1;
+        // background: rgb(255,12,41);     
+        // background: linear-gradient(90deg, rgba(255,12,41,1) 50%, rgba(253,29,29,1) 50%, rgba(255,255,255,1) 50%);      
+    }
+    @include m.desktop_1280 {
+        height: 70rem;
+    }
+}
+
+.bloque1Other {
+    display: none;
+    @include m.desktop_1020 {
+        position: absolute;
+        display: grid;
+        width: 20rem;
+        height: 100%;
+        background-color: white;
+        right: 0;
+    }
+    @include m.desktop_1360 {
+        width: 30rem;
     }
 }
 
@@ -38,6 +57,9 @@
         width: v.$max-width-1020;
         padding-top: 0;
     }
+    @include m.desktop_1360 {
+        width: v.$max-width-1360;
+    }
 }
 
 .bloque1Container__left {
@@ -61,6 +83,19 @@
             left: 3rem;
             img {
                 width: 100%;
+            }
+        }
+        @include m.desktop_1280 {
+            right: 0;
+            left: -3rem;
+            img {
+                width: 48rem;
+            }
+        }
+        @include m.desktop_1360 {
+            left: 0;
+            img {
+               width: 55rem; 
             }
         }
     }
@@ -89,6 +124,13 @@
             left: 2rem;
             top: 2rem;
         }
+        @include m.desktop_1020 {
+            left: -1rem;
+            top: 4rem;
+        }
+        @include m.desktop_1360 {
+            left: 0;
+        }
         img {
             width: 12rem;
             @include m.phone_375 {
@@ -113,6 +155,13 @@
     @include m.desktop_1020 {
         top: 11rem;
         left: 2rem;
+    }
+    @include m.desktop_1280 {
+        top: 14rem;
+        left: -1rem;
+    }
+    @include m.desktop_1360 {
+        left: 0;
     }
     img {
         width: 10rem;
@@ -147,6 +196,12 @@
         bottom: 5rem;
         left: 3rem;
         line-height: 1.3;
+    }
+    @include m.desktop_1280 {
+        left: -1rem;
+    }
+    @include m.desktop_1360 {
+        left: 0;
     }
     h4, h3 {
         margin: 0;
@@ -188,6 +243,12 @@
     @include m.desktop_1020 {
         display: grid;
     }
+    @include m.desktop_1280 {
+        top: 3.5rem;
+    }
+    @include m.desktop_1360 {
+        right: 1rem;
+    }
     img {
         width: 20rem;
     }
@@ -204,6 +265,9 @@
         align-items: flex-end;
         justify-content: center;
         border-radius: 0;
+    }
+    @include m.desktop_1360 {
+        justify-content: flex-end;
     }
     // @include m.phone_390 {
     //     width: 90%;
@@ -223,6 +287,13 @@
         height: 51rem;
         width: 40rem;
         // background-color: yellow;
+    }
+    @include m.desktop_1280 {
+        position: relative;
+        bottom: 5rem;
+    }
+    @include m.desktop_1360 {
+        width: 43rem;
     }
 }
 
@@ -400,5 +471,11 @@
 
 .backgroundRepeat {
     transition: background-color 1.5s ease;
+    background-color: v.$color2 !important;
+}
+
+.bloque7GridGroupOther {
+    // transition: background 1.5s ease;
+    transition: background-color 1.4s ease;
     background-color: v.$color2 !important;
 }

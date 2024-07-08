@@ -10,15 +10,21 @@
     @include m.desktop_1020 {
       display: grid;
       justify-content: center;
-      margin-top: 3rem;
+      margin: 3rem 0 5rem 0;
+    }
+    @include m.desktop_1280 {
+      margin: 6rem 0 4rem 0;
     }
 }
 
 .bloque6Container {
     padding: 4.5rem 0 3.5rem 0;
     @include m.desktop_1020 {
-      max-width: v.$max-width-1020;
+      max-width: 80rem;
       padding: 1.5rem 0 1.5rem 0;
+    }
+    @include m.desktop_1280 {
+      padding: 1.5rem 0 8.5rem 0;
     }
 }
 
@@ -44,6 +50,7 @@
     h4 {
         font-size: 1.2rem;
         padding: 0 5rem;
+        color: black;
         @include m.desktop_1020 {
           font-size: 1.8rem;
         }
@@ -164,20 +171,8 @@
       width: 80%;
     }
     @include m.desktop_1020 {
-      height: 25rem;
+      height: 23rem;
       width: 80%;
-    }
-    @include m.desktop_1280 {
-      width: 82%;
-      height: 41rem;
-    }
-    @include m.desktop_1440 {
-      width: 80%;
-      height: 43rem;
-    }
-    @include m.desktop_1920 {
-      width: 73%;
-      // height: 41rem;
     }
   }
 
@@ -241,6 +236,10 @@
     @include m.tablet_768 {
       right: 5rem !important;
     }
+    @include m.desktop_1020 {
+      top: 50%;
+      right: -6rem !important;
+    }
     img {
         height: 100%;
         width: 100%;
@@ -261,6 +260,10 @@
     }
     @include m.tablet_768 {
       left: 5rem !important;
+    }
+    @include m.desktop_1020 {
+      top: 50%;
+      left: -6rem !important;
     }
     img {
         height: 100%;
@@ -283,5 +286,9 @@
     }
     @include m.desktop_1020 {
       position: absolute;
+      bottom: -2rem !important;
+    }
+    @include m.desktop_1280 {
+      bottom: -7rem !important;
     }
 }

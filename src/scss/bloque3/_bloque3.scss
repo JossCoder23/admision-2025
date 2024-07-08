@@ -238,6 +238,9 @@
     @include m.tablet_768 {
       right: 6rem !important;
     }
+    @include m.desktop_1280 {
+      right: 15rem !important;
+    }
     img {
         height: 100%;
         width: 100%;
@@ -262,6 +265,9 @@
     }
     @include m.tablet_768 {
       left: 6rem !important;
+    }
+    @include m.desktop_1280 {
+      left: 15rem !important;
     }
     img {
         height: 100%;

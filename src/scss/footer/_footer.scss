@@ -1,3 +1,6 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 footer {
     height: auto;
     background-color: black;
@@ -12,11 +15,18 @@ footer {
     padding: 2rem 0;
     display: grid;
     row-gap: 2rem;
+    @include m.desktop_1020 {
+        margin: 2rem 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .footerImage {
     img {
         width: 20rem;
+        @include m.desktop_1020 {
+            width: 23rem;
+        }
     }
 }
 
@@ -28,5 +38,11 @@ footer {
         font-size: 1.35rem;
         font-weight: 500;
         color: white;
+        @include m.desktop_1020 {
+            text-align: right;
+            display: grid;
+            align-items: center;
+            height: 100%;
+        }
     }
 }

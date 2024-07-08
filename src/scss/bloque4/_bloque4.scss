@@ -10,6 +10,9 @@
     @include m.tablet_768 {
         height: 45rem;
     }
+    @include m.desktop_1020 {
+        height: 50rem;
+    }
 }
 
 .bloque4Container {
@@ -40,6 +43,7 @@
     h4 {
         font-size: 1.5rem;
         font-weight: 600;
+        color: black;
         @include m.tablet_768 {
             margin-top: 1rem;
             font-size: 2.4rem;
@@ -109,6 +113,10 @@
     @include m.tablet_768 {
         width: 33rem;
         height: 19rem;
+    }
+    @include m.desktop_1020 {
+        width: 40rem;
+        height: 23rem;
     }
     .video_movile {
         width: 100%;

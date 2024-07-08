@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
     let container1 = document.getElementById('bloque1');
-    let containerTop = document.querySelector('.bloque1Container__left');
+    // let containerTop = document.querySelector('.bloque1Container__left');
     let container2 = document.getElementById('bloque2');
     let container4 = document.querySelector('.bloque4');
     let gestion = document.querySelector('.bloque7ButtonItem1');
@@ -44,14 +44,16 @@ window.addEventListener("load", () => {
     window.addEventListener("scroll", (e) => {
         // console.log(window.scrollY);
         if(window.scrollY > 350) {
-            container1.classList.add('backgroundRepeat');
-            containerTop.classList.add('backgroundRepeat');
+            // container1.classList.add('backgroundRepeat');
+            container1.classList.add('bloque7GridGroupOther');
+            // containerTop.classList.add('backgroundRepeat');
             container2.classList.add('backgroundRepeat');
             button1.classList.add('backgroundRepeat');
             container4.classList.add('backgroundRepeat');
         } else {
-            container1.classList.remove('backgroundRepeat');
-            containerTop.classList.remove('backgroundRepeat');
+            container1.classList.remove('bloque7GridGroupOther');
+            // container1.classList.remove('backgroundRepeat');
+            // containerTop.classList.remove('backgroundRepeat');
             container2.classList.remove('backgroundRepeat');
             button1.classList.remove('backgroundRepeat');
             container4.classList.remove('backgroundRepeat');

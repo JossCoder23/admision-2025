@@ -11,6 +11,9 @@
         justify-content: center;
         margin-top: 5rem;
     }
+    @include m.desktop_1280 {
+        grid-template-rows: 3.5rem auto 5.5rem;
+    }
 }
 
 .bloque5Image {
@@ -36,6 +39,10 @@
 .bloque5ImageDesktop1 {
     left: 6.8rem;
     bottom: 2.2rem;
+    @include m.desktop_1020 {
+        left: 25.8rem;
+        bottom: 0.2rem;
+    }
     img {
         width: 60rem;
     }
@@ -63,18 +70,18 @@
     position: relative;
     overflow: hidden;
     @include m.phone_360 {
+        padding: 2rem 0 .5rem 0;
+    }
+    @include m.phone_380 {
         padding: 3rem 0;
     }
-    @include m.phone_375 {
-        padding: 5rem 0;
-    }
-    @include m.phone_390 {
-        padding: 6rem 0;
-    }
     @include m.phone_414 {
-        padding: 8rem 0;
+        padding: 5rem 0 6rem 0;
     }
     @include m.phone_428 {
+        padding: 7rem 0;
+    }
+    @include m.phone_440 {
         padding: 9rem 0;
     }
     @include m.tablet_768 {
@@ -118,6 +125,7 @@
         font-weight: 600;
         font-size: 1.3rem;
         padding: 0 2rem;
+        color: black;
         @include m.tablet_768 {
             font-size: 1.8rem;
         }
@@ -172,8 +180,8 @@
     }
 }
 
-.slider__item3, .swiper-slide {
-    // margin-top: 2rem;
+.slider__item3.swiper-slide {
+    margin-top: 4rem;
     height: auto;
     position: relative;
     display: grid !important;
@@ -186,6 +194,7 @@
     }
     @include m.desktop_1020 {
         padding-bottom: 0;
+        margin-top: 4rem !important;
         overflow: visible !important;
     }
   }
@@ -197,7 +206,7 @@
   background-color: white;
   position: relative;
 //   row-gap: 1.5rem;
-  height: 18rem;
+  height: 25rem;
   border-radius: 1rem;
   padding-top: 6rem;
   display: grid;
@@ -216,6 +225,7 @@
     width: 56%;
   }
   @include m.phone_428 {
+    // height: 24rem;
     width: 54%;
   }
   @include m.phone_480 {
@@ -225,20 +235,8 @@
     width: 80%;
   }
   @include m.desktop_1020 {
-    height: 20rem;
+    height: 25rem;
     width: 85%;
-  }
-  @include m.desktop_1280 {
-    width: 82%;
-    height: 41rem;
-  }
-  @include m.desktop_1440 {
-    width: 80%;
-    height: 43rem;
-  }
-  @include m.desktop_1920 {
-    width: 73%;
-    // height: 41rem;
   }
 }
 
@@ -313,7 +311,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 3rem !important;
+    bottom: 5rem !important;
     z-index: 800;
     @include m.phone_360 {
         bottom: 2.5rem !important;
