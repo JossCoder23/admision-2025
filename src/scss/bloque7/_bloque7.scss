@@ -54,9 +54,9 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 }
 
 .bloque7Container__right {
-    @include m.tablet_768 {
-        // display: grid;
-        // justify-items: center;
+    @include m.desktop_1020 {
+        display: grid;
+        justify-items: center;
     }
 }
 
@@ -105,6 +105,9 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     cursor: pointer;
     @include m.phone_390 {
         width: 23rem;
+    }
+    @include m.desktop_1020 {
+        width: 100%;
     }
    
 }

@@ -7,6 +7,10 @@
     display: grid;
     grid-template-rows: 3.5rem auto 3.5rem;
     position: relative;
+    @include m.desktop_1020 {
+        justify-content: center;
+        margin-top: 5rem;
+    }
 }
 
 .bloque5Image {
@@ -48,6 +52,9 @@
 
 .bloque5Other {
     background-color: white;
+    @include m.desktop_1020 {
+        background-color: transparent;
+    }
 }
 
 .bloque5Container {
@@ -73,6 +80,11 @@
     @include m.tablet_768 {
         padding: 4rem 0 5rem 0;
     }
+    @include m.desktop_1020 {
+        max-width: v.$max-width-1020;
+        padding: 0;
+        overflow: visible;
+    }
 }
 
 .bloque5Title {
@@ -85,6 +97,9 @@
     margin-top: 3rem;
     text-align: center;
     width: 100%;
+    @include m.desktop_1020 {
+        margin-bottom: 3rem;
+    }
     h3, h4 {
         margin: 0;
     }
@@ -120,6 +135,7 @@
       display: flex;
       justify-content: center;
       margin-top: 2rem;
+      overflow: visible;
     }
     @include m.desktop_1360 {
       margin-top: 4rem;
@@ -151,6 +167,9 @@
     display: flex;
     height: auto;
     // margin-bottom: 3rem;
+    @include m.desktop_1020 {
+        overflow: visible !important;
+    }
 }
 
 .slider__item3, .swiper-slide {
@@ -167,8 +186,10 @@
     }
     @include m.desktop_1020 {
         padding-bottom: 0;
+        overflow: visible !important;
     }
   }
+
   
   //ancho-individual
 .sliderItemInfo3 {
@@ -204,8 +225,8 @@
     width: 80%;
   }
   @include m.desktop_1020 {
-    height: 37rem;
-    width: 100%;
+    height: 20rem;
+    width: 85%;
   }
   @include m.desktop_1280 {
     width: 82%;

@@ -11,7 +11,7 @@
     overflow: hidden;
     @include m.desktop_1020 {
         padding-bottom: 0;
-        height: 100vh;
+        height:  60rem;
         background: rgb(255,12,41);     
         background: linear-gradient(90deg, rgba(255,12,41,1) 50%, rgba(253,29,29,1) 50%, rgba(255,255,255,1) 50%);      
     }
@@ -43,10 +43,26 @@
 .bloque1Container__left {
     height: 20rem;
     transition: background-color 1.5s ease;
-    background-color: v.$color1;
+    // background-color: v.$color1;
     position: relative;
+    // background-color: green;
     @include m.phone_375 {
         height: 25rem;
+    }
+    @include m.desktop_1020 {
+        height: 100%;
+    }
+    .bloque1_logoDesktop {
+        display: none;
+        @include m.desktop_1020 {
+            display: grid;
+            position: absolute;
+            bottom: 0;
+            left: 3rem;
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -57,6 +73,9 @@
     justify-content: space-between;
     align-items: center;
     .bloque1_logo1 {
+        @include m.desktop_1020 {
+            display: none;
+        }
         img {
             width: 13rem;
             @include m.phone_375 {
@@ -65,10 +84,18 @@
         }
     }
     .bloque1_logo2 {
+        @include m.desktop_1020 {
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+        }
         img {
             width: 12rem;
             @include m.phone_375 {
                 width: 15rem;
+            }
+            @include m.desktop_1020 {
+                width: 23rem;
             }
         }
     }
@@ -82,6 +109,10 @@
     left: .5rem;
     @include m.phone_375 {
         top: 10rem;
+    }
+    @include m.desktop_1020 {
+        top: 11rem;
+        left: 2rem;
     }
     img {
         width: 10rem;
@@ -111,6 +142,12 @@
     @include m.phone_375 {
         bottom: 2.5rem;
     }
+    @include m.desktop_1020 {
+        width: 21rem;
+        bottom: 5rem;
+        left: 3rem;
+        line-height: 1.3;
+    }
     h4, h3 {
         margin: 0;
         display: flex;
@@ -121,8 +158,16 @@
             font-size: 2rem;
         }
     }
+    h3 {
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+        }
+    }
     h4 {
         font-weight: 400;
+        @include m.desktop_1020 {
+            font-weight: 300;
+        }
     }
 }
 
@@ -130,6 +175,22 @@
     height: auto;
     display: flex;
     justify-content: center;
+    @include m.desktop_1020 {
+        position: relative;
+    }
+}
+
+.bloque1DesktopLogo {
+    display: none;
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+    @include m.desktop_1020 {
+        display: grid;
+    }
+    img {
+        width: 20rem;
+    }
 }
 
 .bloque1Container__form {
@@ -138,7 +199,7 @@
     width: 100%;
     border-radius: 1rem;
     @include m.desktop_1020 {
-        background-color: gray;
+        // background-color: gray;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -159,8 +220,8 @@
         width: 100%;
     }
     @include m.desktop_1020 {
-        height: 50rem;
-        width: 35rem;
+        height: 51rem;
+        width: 40rem;
         // background-color: yellow;
     }
 }
@@ -170,6 +231,10 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 1.3rem;
+    @include m.desktop_1020 {
+        height: 6rem;
+        margin-bottom: 1.5rem;
+    }
     h3, h4 {
         margin: 0;
         text-align: center;
@@ -183,10 +248,16 @@
         @include m.phone_375 {
             font-size: 1.8rem;
         }
+        @include m.desktop_1020 {
+            font-size: 2rem;
+        }
     }
     h4 {
         font-size: 1.6rem;
         font-weight: 500;
+        @include m.desktop_1020 {
+            font-size: 1.9rem;
+        }
     }
 }
 
@@ -291,7 +362,7 @@
         padding-left: 25%;
     }
     @include m.desktop_1020 {
-        padding-left: 25.5%;
+        padding-left: 28%;
     }
     @include m.desktop_1280 {
         padding-left: 24.5%;
@@ -317,6 +388,9 @@
         border: none;
         background-color: v.$color1;
         border-radius: .8rem;
+        @include m.desktop_1020 {
+            background-color: black;
+        }
         h3 {
             margin: 0;
             color: white;
