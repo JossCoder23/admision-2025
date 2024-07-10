@@ -64,6 +64,9 @@
   @include m.desktop_1020 {
     padding: 6.5rem 0 4.5rem 0;
   }
+  @include m.desktop_1360 {
+    padding: 10.5rem 0 7.5rem 0;
+  }
 }
 
 .bloque2Image1 {
@@ -96,6 +99,9 @@
     z-index: 10;
     position: relative;
     margin-bottom: 2rem;
+    @include m.desktop_1360 {
+      height: 10rem;
+    }
     h3, h4 {
         margin: 0;
         text-align: center;
@@ -107,6 +113,9 @@
         @include m.tablet_768 {
           font-size: 2.3rem;
         }
+        @include m.desktop_1360 {
+          font-size: 3.3rem;
+        }
     }
     h4 {
         font-size: 1.4rem;
@@ -115,6 +124,10 @@
         color: black;
         @include m.tablet_768 {
           font-size: 2rem;
+        }
+        @include m.desktop_1360 {
+          font-size: 2.5rem;
+          font-weight: 600;
         }
     }
 }
@@ -149,6 +162,9 @@
       max-width: 95rem;
       // display: grid !important;
       // grid-template-columns: repeat(4, 1fr);
+    }
+    @include m.desktop_1360 {
+      max-width: v.$max-width-1360;
     }
   }
 
@@ -238,9 +254,12 @@
     width: 82%;
     height: 41rem;
   }
+  @include m.desktop_1360 {
+    width: 100%;
+  }
   @include m.desktop_1440 {
-    width: 80%;
-    height: 43rem;
+    // width: 80%;
+    // height: 43rem;
   }
   @include m.desktop_1920 {
     width: 73%;
@@ -257,6 +276,9 @@
     }
     img {
       width: 17rem;
+      @include m.desktop_1360 {
+        width: 21rem;
+      }
     }
   }
   .itemText {

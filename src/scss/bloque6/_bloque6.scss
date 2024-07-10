@@ -20,7 +20,7 @@
 .bloque6Container {
     padding: 4.5rem 0 3.5rem 0;
     @include m.desktop_1020 {
-      max-width: 80rem;
+      max-width: 90rem;
       padding: 1.5rem 0 1.5rem 0;
     }
     @include m.desktop_1280 {
@@ -171,8 +171,8 @@
       width: 80%;
     }
     @include m.desktop_1020 {
-      height: 23rem;
-      width: 80%;
+      height: 22rem;
+      width: 88%;
     }
   }
 

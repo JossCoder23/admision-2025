@@ -11,7 +11,10 @@
         height: 45rem;
     }
     @include m.desktop_1020 {
-        height: 50rem;
+        height: 60rem;
+    }
+    @include m.desktop_1360 {
+        height: 75rem;
     }
 }
 
@@ -75,8 +78,14 @@
 .bloque4Desktop__image1 {
     right: 0rem;
     bottom: -35rem;
+    @include m.desktop_1020 {
+        bottom: -29rem;
+    }   
     img {
         width: 50rem;
+        @include m.desktop_1020 {
+            width: 60rem;
+        }
     }
 }
 
@@ -115,8 +124,8 @@
         height: 19rem;
     }
     @include m.desktop_1020 {
-        width: 40rem;
-        height: 23rem;
+        width: 49rem;
+        height: 30rem;
     }
     .video_movile {
         width: 100%;

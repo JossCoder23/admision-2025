@@ -106,8 +106,8 @@ window.addEventListener("load", () => {
                 slidesPerColumn: 1
             },
             999: {
-                slidesPerView: 3,
-                slidesPerColumn: 2
+                slidesPerView: 1,
+                slidesPerColumn: 1
             },
         }
     });
@@ -154,7 +154,7 @@ window.addEventListener("load", () => {
                 slidesPerColumn: 1
             },
             999: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 slidesPerColumn: 1
             },
         }
