@@ -2,6 +2,7 @@
 @use 'base/mixins' as m;
 
 .bloque4 {
+    display: none;
     background-color: v.$color1;
     transition: background-color 1.5s ease;
     height: 40rem;
@@ -92,8 +93,14 @@
 .bloque4Desktop__image2 {
     left: 0;
     bottom: -8rem;
+    @include m.desktop_1020 {
+        bottom: -11rem;
+    }
     img {
         width: 28rem;
+        @include m.desktop_1020 {
+            width: 36rem;
+        }
     }
 }
 

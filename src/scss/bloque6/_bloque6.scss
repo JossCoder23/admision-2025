@@ -10,7 +10,7 @@
     @include m.desktop_1020 {
       display: grid;
       justify-content: center;
-      margin: 3rem 0 5rem 0;
+      margin: 5rem 0 9rem 0;
     }
     @include m.desktop_1280 {
       margin: 6rem 0 4rem 0;
@@ -180,6 +180,12 @@
     img {
         width: 100.5%;
     }
+    .smp {
+      @include m.desktop_1020 {
+        position: relative;
+        bottom: -.5rem;
+      }
+    }
     .molina {
         position: relative;
         bottom: -1rem;
@@ -189,6 +195,9 @@
         width: 100%;
         position: relative;
         bottom: -.8rem;
+        @include m.desktop_1020 {
+          bottom: -1rem;
+        }
     }
     .san_isidro {
         position: relative;

@@ -20,7 +20,7 @@
 .bloque3Container {
     padding: 2.5rem 0 0 0;
     @include m.desktop_1020 {
-      padding: 2.5rem 0 3rem 0;
+      padding: 2.5rem 0 6rem 0;
     }
 }
 
@@ -243,8 +243,15 @@
     @include m.tablet_768 {
       right: 6rem !important;
     }
+    @include m.desktop_1020 {
+      top: 48%;
+      right: 10rem !important;
+    }
     @include m.desktop_1280 {
-      right: 15rem !important;
+      right: 20em !important;
+    }
+    @include m.desktop_1360 {
+      right: 25rem !important;
     }
     img {
         height: 100%;
@@ -271,8 +278,15 @@
     @include m.tablet_768 {
       left: 6rem !important;
     }
+    @include m.desktop_1020 {
+      top: 48%;
+      left: 10rem !important;
+    }
     @include m.desktop_1280 {
-      left: 15rem !important;
+      left: 20rem !important;
+    }
+    @include m.desktop_1360 {
+      left: 25rem !important;
     }
     img {
         height: 100%;
@@ -302,7 +316,7 @@
     }
     @include m.desktop_1020 {
       position: absolute;
-      bottom: -1rem !important;
+      bottom: -3rem !important;
     }
 }
 
@@ -324,6 +338,15 @@
   height: 40rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: .2rem;
+}
+
+.siiderDesktopContainer2 {
+  background-color: gray;
+  width: 65%;
+  height: 40rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: .2rem;
 }
 
