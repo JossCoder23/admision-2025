@@ -11,7 +11,8 @@
         justify-content: center;
         margin-top: 5rem;
     }
-    @include m.desktop_1280 {
+    @include m.desktop_1220 {
+        overflow: hidden;
         grid-template-rows: 3.5rem auto 5.5rem;
     }
 }
@@ -43,17 +44,31 @@
         left: 25.8rem;
         bottom: 0.2rem;
     }
+    @include m.desktop_1220 {
+        left: 15.8rem;
+    }
+    @include m.desktop_1360 {
+        left: 21.8rem;
+    }
     img {
         width: 60rem;
+        @include m.desktop_1220 {
+            width: 90rem;
+        }
     }
 }
 
 .bloque5ImageDesktop2 {
     right: 0;
     bottom: 2rem;
+    @include m.desktop_1220 {
+        bottom: -13rem;
+    }
     img {
         width: 10rem;
-        
+        @include m.desktop_1220 {
+            width: 25rem;
+        }
     }
 }
 
@@ -118,6 +133,12 @@
         @include m.tablet_768 {
             font-size: 2.3rem;
         }
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 2.8rem;
+        }
     }
     h4 {
         display: grid;
@@ -128,6 +149,17 @@
         color: black;
         @include m.tablet_768 {
             font-size: 1.8rem;
+        }
+        @include m.desktop_1020 {
+            display: none;
+        }
+    }
+    .bloque5TitleDesktop {
+        display: none;
+        @include m.desktop_1020 {
+            display: grid;
+            font-size: 1.9rem;
+            font-weight: 800;
         }
     }
 }

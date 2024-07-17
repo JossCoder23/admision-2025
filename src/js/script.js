@@ -166,6 +166,38 @@ window.addEventListener("load", () => {
     //     alert("ya me pase")
     // }
 
+    let boton = document.querySelector('.bloqueFloat');
+
+   window.addEventListener("scroll", (e) => {
+
+
+        if( screen.width >= 320 && screen.width <= 1019 ) {
+            if( window.scrollY >= 650 && window.scrollY <= 2600 ) {
+                boton.classList.add('bloqueFloatActive')
+            }else {
+                boton.classList.remove('bloqueFloatActive')
+            }
+        }
+       
+        if( screen.width >= 1020 && screen.width <= 1280 ) {
+            // console.log(window.scrollY);
+            if( window.scrollY >= 350 && window.scrollY <= 3700 ) {
+                boton.classList.add('bloqueFloatActive')
+            }else {
+                boton.classList.remove('bloqueFloatActive')
+            }
+        }
+
+        if( screen.width >= 1360 && screen.width <= 2600 ) {
+            if( window.scrollY >= 450 && window.scrollY <= 4000 ) {
+                boton.classList.add('bloqueFloatActive')
+            }else {
+                boton.classList.remove('bloqueFloatActive')
+            }
+        }
+
+   })
+
 })
 
 

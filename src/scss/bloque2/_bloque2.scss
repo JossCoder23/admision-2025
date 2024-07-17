@@ -190,6 +190,8 @@
         display: grid !important;
         grid-column: 3/5;
         grid-row: 1/2;
+        padding: 0 !important;
+        margin: 0 !important;
       }
       .swiper-slide3 {
         display: grid;
@@ -274,21 +276,21 @@
   }
   @include m.desktop_1020 {
     height: 37rem;
-    width: 100%;
+    width: 120%;
   }
   @include m.desktop_1280 {
-    width: 82%;
+    // width: 82%;
     height: 41rem;
   }
   @include m.desktop_1360 {
-    width: 100%;
+    // width: 100%;
   }
   @include m.desktop_1440 {
     // width: 80%;
     // height: 43rem;
   }
   @include m.desktop_1920 {
-    width: 73%;
+    // width: 73%;
     // height: 41rem;
   }
   .itemImage {
@@ -332,6 +334,9 @@
       color: black;
       @include m.tablet_768 {
         font-size: 1.7rem;
+      }
+      @include m.desktop_1020 {
+        margin-top: 1rem;
       }
     }
   }

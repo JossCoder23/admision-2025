@@ -15,9 +15,17 @@ footer {
     padding: 2rem 0;
     display: grid;
     row-gap: 2rem;
-    @include m.desktop_1020 {
+    @include m.tablet_760 {
         margin: 2rem 0;
         grid-template-columns: repeat(2, 1fr);
+       
+        padding: 4rem 0;
+    }
+    @include m.desktop_1020 {
+        width: v.$max-width-1020;
+    }
+    @include m.desktop_1360 {
+        width: v.$max-width-1360;
     }
 }
 
@@ -25,7 +33,10 @@ footer {
     img {
         width: 20rem;
         @include m.desktop_1020 {
-            width: 23rem;
+            width: 28rem;
+        }
+        @include m.desktop_1360 {
+            width: 33rem;
         }
     }
 }
@@ -38,11 +49,15 @@ footer {
         font-size: 1.35rem;
         font-weight: 500;
         color: white;
-        @include m.desktop_1020 {
+        @include m.tablet_760 {
             text-align: right;
             display: grid;
             align-items: center;
             height: 100%;
+            font-size: 1.5rem;
+        }
+        @include m.desktop_1360 {
+            font-size: 1.8rem;
         }
     }
 }

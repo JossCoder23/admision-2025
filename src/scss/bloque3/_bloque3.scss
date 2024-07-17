@@ -247,7 +247,7 @@
       top: 48%;
       right: 10rem !important;
     }
-    @include m.desktop_1280 {
+    @include m.desktop_1220 {
       right: 20em !important;
     }
     @include m.desktop_1360 {
@@ -282,7 +282,7 @@
       top: 48%;
       left: 10rem !important;
     }
-    @include m.desktop_1280 {
+    @include m.desktop_1220 {
       left: 20rem !important;
     }
     @include m.desktop_1360 {
@@ -334,7 +334,7 @@
 
 .siiderDesktopContainer {
   background-color: gray;
-  width: 90%;
+  width: 95%;
   height: 40rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -385,6 +385,7 @@
       // background-color: salmon;
       margin: 0;
       font-size: 1.2rem;
+      font-weight: 800;
       // display: flex;
       // justify-content: center;
       // height: 100%;

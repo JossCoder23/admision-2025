@@ -24,7 +24,9 @@ html(lang="es")
         link(rel='preconnect' href='https://fonts.googleapis.com')
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
-    body
+    body#top
+        a.bloqueFloat(href="#top") 
+            h3 Quiero más información
         .bloque1#bloque1
             .bloque1Other
             .bloque1Container
@@ -312,6 +314,9 @@ html(lang="es")
                 .bloque5Title
                     h3 Los mejores estudian con nosotros 
                     h4 Cayetano es estudiantes y egresados llevando su talento al máximo
+                    h4.bloque5TitleDesktop Cayetano es estudiantes y egresados
+                        br
+                        | llevando su talento al máximo
                 .bloque5Slider
                     .slider__container3.swiper.mySwiper3
                         .slider__grid3.swiper-wrapper
@@ -358,11 +363,21 @@ html(lang="es")
                     .swiper-pagination3
             .bloque5Other   
         .bloque6
+            .bloque6Back1
+                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/campus_back2.webp", alt="")
+            .bloque6Back2
+                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/campus_back.webp", alt="")
             .bloque6Container
                 .bloque6Title
                     h3 Cayetano es
                         br
                         span infraestructura de primer nivel
+                    h3.bloque6TitleDesktop
+                        | Cayetano es 
+                        span
+                            | infraestructura 
+                            br
+                            |  de primer nivel
                     h4 Espacios de excelencia, intercambio y vida universitaria
                 .bloque6Slider
                     .slider__container4.swiper.mySwiper4
@@ -423,6 +438,8 @@ html(lang="es")
                                 .bloque7GridImage
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/bloque6_gestion.webp", alt="")
                                 .bloque7GridDescription
+                                    .bloque7Gestion
+                                        h3 Gestión
                                     .bloque7GridDescriptionContainer
                                         ul.ul-5 
                                             li Administración (nuevo)
@@ -438,6 +455,8 @@ html(lang="es")
                                 .bloque7GridImage
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/bloque6_salud.webp", alt="")
                                 .bloque7GridDescription
+                                    .bloque7Salud
+                                        h3 Salud
                                     .bloque7GridDescriptionContainer.bloque7GridDescriptionContainerSalud
                                         ul 
                                             li Medicina
@@ -461,8 +480,10 @@ html(lang="es")
                                 .bloque7GridImage
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/bloque6_ingenierias.webp", alt="")
                                 .bloque7GridDescription
+                                    .bloque7Ingenieria
+                                        h3 Ingeniería
                                     .bloque7GridDescriptionContainer
-                                        ul.ul-1
+                                        ul
                                             li Ing. Industrial (nuevo)
                                             li Ing. Ambiental 
                                             li Ing. Informática 
@@ -479,6 +500,8 @@ html(lang="es")
                                 .bloque7GridImage
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/bloque6_educacion.webp", alt="")
                                 .bloque7GridDescription
+                                    .bloque7Educacion
+                                        h3 Educación
                                     .bloque7GridDescriptionContainer
                                         ul.ul-5 
                                             li Educación (nuevo)
@@ -494,6 +517,8 @@ html(lang="es")
                                 .bloque7GridImage
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/07/bloque6_ciencias.webp", alt="")
                                 .bloque7GridDescription
+                                    .bloque7Ciencias
+                                        h3 Ciencias
                                     .bloque7GridDescriptionContainer
                                         ul.ul-3 
                                             li Biología

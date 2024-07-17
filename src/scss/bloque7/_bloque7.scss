@@ -25,8 +25,11 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 
 .bloque7Image {
     position: absolute;
-    @include m.desktop_1020 {
+    @include m.tablet_760 {
         width: 100%;
+    }
+    @include m.desktop_1020 {
+        
     }
     img {
         width: 100%;
@@ -84,7 +87,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     row-gap: 1rem;
     // padding-bottom: 2rem;
     margin-bottom: 3rem;
-    @include m.tablet_768 {
+    @include m.desktop_1020 {
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
     }
@@ -221,7 +224,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 
 .bloque7GridGroupToggle2 {
     display: grid;
-    height: 30rem;
+    height: 25rem;
     transition: height .5s ease;
     // height: 30rem;
 }
@@ -265,6 +268,119 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     height: auto;
     @include m.desktop_1020 {
         align-items: flex-end;
+        position: relative;
+    }
+}
+
+.bloque7Gestion {
+    display: none;
+    @include m.desktop_1020 {
+        display: grid;
+        position: absolute;
+        top: 4.5rem;
+        left: -1.3rem;
+        // background-color: green;
+        width: 100%;
+        h3 {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            border-top: 1px solid white;
+        }
+    }
+    @include m.desktop_1220 {
+        top: 6.5rem;
+    }
+    @include m.desktop_1280 {
+        top: 4.5rem;
+    }
+}
+
+.bloque7Salud {
+    display: none;
+    @include m.desktop_1020 {
+        display: grid;
+        position: absolute;
+        top: 4rem;
+        left: -1.3rem;
+        // background-color: green;
+        width: 100%;
+        h3 {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            border-top: 1px solid white;
+        }
+    }
+    @include m.desktop_1220 {
+        top: 6.5rem;
+    }
+    @include m.desktop_1280 {
+        top: 1rem;
+    }
+}
+
+.bloque7Ingenieria {
+    display: none;
+    @include m.desktop_1020 {
+        display: grid;
+        position: absolute;
+        top: 3rem;
+        left: -1.3rem;
+        // background-color: green;
+        width: 100%;
+        h3 {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            border-top: 1px solid white;
+        }
+    }
+}
+
+.bloque7Educacion {
+    display: none;
+    @include m.desktop_1020 {
+        display: grid;
+        position: absolute;
+        top: 7rem;
+        left: -1.3rem;
+        // background-color: green;
+        width: 100%;
+        h3 {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            border-top: 1px solid white;
+        }
+    }
+}
+
+.bloque7Ciencias {
+    display: none;
+    @include m.desktop_1020 {
+        display: grid;
+        position: absolute;
+        top: 3rem;
+        left: -1.3rem;
+        // background-color: green;
+        width: 100%;
+        h3 {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 600;
+            border-top: 1px solid white;
+        }
     }
 }
 
@@ -303,16 +419,23 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 }
 
 .ul-5 {
-    position: relative;
-    bottom: 6rem;
+    @include m.desktop_1020 {
+        position: relative;
+        bottom: 7rem;
+    }
 }
 
 .ul-1 {
-    position: relative;
-    bottom: 1rem;
+    @include m.desktop_1020 {
+        position: relative;
+        bottom: 1rem;
+    }
 }
 
 .ul-3 {
-    position: relative;
-    bottom: 3rem;
+    @include m.desktop_1020 {
+        position: relative;
+        bottom: 3rem;
+    }
+    
 }

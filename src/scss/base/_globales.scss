@@ -27,23 +27,53 @@ h1, h2, h3, h4, input, select, ul, li {
     width: 5px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px green; 
-    border-radius: 5px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: green; 
-    border-radius: 5px;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px green; 
+  border-radius: 5px;
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: green; 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: green; 
+}
+
+.bloqueFloat {
+  position: fixed;
+  visibility: hidden !important;
+  height: 5rem;
+  width: 90%;
+  background-color: black;
+  bottom: 2rem;
+  right: 1.8rem;
+  z-index: 130;
+  // background-color: red;
+  text-align: center;
+  @include m.desktop_1020 {
+    width: 30%;  
   }
+  h3 {
+    height: 4rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-
+.bloqueFloatActive {
+  visibility: visible !important;
+}
 
   
