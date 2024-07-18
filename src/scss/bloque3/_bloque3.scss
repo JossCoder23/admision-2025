@@ -373,8 +373,10 @@
     // background-color: orange;
     display: flex;
     justify-items: center;
+    align-items: center;
     img {
       width: 100%;
+      height: 9rem;
     }
   }
   .sliderDesktopItemTop__descriptionText {
