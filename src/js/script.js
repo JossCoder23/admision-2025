@@ -124,6 +124,7 @@ window.addEventListener("load", () => {
                 return '<span class="bullet ' + className + '"></span>';
             }
         },
+        loop: true,
         breakpoints: {
             760: {
                 slidesPerView: 2,
@@ -131,7 +132,7 @@ window.addEventListener("load", () => {
             },
             999: {
                 slidesPerView: 3,
-                slidesPerColumn: 1
+                slidesPerColumn: 3
             },
         }
     });

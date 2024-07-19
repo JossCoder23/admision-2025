@@ -71,6 +71,15 @@
   }
 }
 
+.slider__other {
+  height: 100%;
+  position: absolute;
+  background-color: green;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .bloque3Title {
     height: 6rem;
     display: grid;
@@ -81,6 +90,7 @@
     }
     h3 {
         font-size: 1.7rem;
+        font-weight: 700;
         @include m.desktop_1020 {
           font-size: 3rem !important;
         }
@@ -248,10 +258,16 @@
       right: 10rem !important;
     }
     @include m.desktop_1220 {
-      right: 20em !important;
+      right: 20rem !important;
     }
     @include m.desktop_1360 {
-      right: 25rem !important;
+      right: 28rem !important;
+    }
+    @include m.desktop_1420 {
+      right: 30rem !important;
+    }
+    @include m.desktop_1500 {
+      right: 34rem !important;
     }
     img {
         height: 100%;
@@ -286,7 +302,13 @@
       left: 20rem !important;
     }
     @include m.desktop_1360 {
-      left: 25rem !important;
+      left: 28rem !important;
+    }
+    @include m.desktop_1420 {
+      left: 30rem !important;
+    }
+    @include m.desktop_1500 {
+      left: 34rem !important;
     }
     img {
         height: 100%;
