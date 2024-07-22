@@ -7,6 +7,7 @@
     display: grid;
     grid-template-rows: 3.5rem auto 3.5rem;
     position: relative;
+    overflow: hidden;
     @include m.desktop_1020 {
         justify-content: center;
         margin-top: 5rem;
@@ -19,13 +20,20 @@
 
 .bloque5Image {
     position: absolute;
-    right: 0;
+    right: -14rem;
     z-index: 0;
+    bottom: 0;
+    width: auto;
     @include m.tablet_768 {
         display: none;
     }
-    img {
-        width: 100%;
+    .last_shield {
+        width: 70rem !important;
+        max-width: none;
+        transform: rotate(351deg);
+        @include m.phone_390 {
+            width: 77rem !important;
+        }
     }
 }
 
@@ -473,10 +481,10 @@
         bottom: 2.5rem !important;
     }
     @include m.phone_375 {
-        bottom: 5.5rem !important;
+        bottom: 6.5rem !important;
     }
     @include m.phone_414 {
-        bottom: 3rem !important;
+        bottom: 4rem !important;
     }
     @include m.desktop_1020 {
         bottom: 5rem !important;
