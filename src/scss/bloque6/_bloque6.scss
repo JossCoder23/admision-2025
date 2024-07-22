@@ -107,6 +107,7 @@
       display: flex;
       justify-content: center;
       margin-top: 3rem;
+      height: 35rem;
     }
     @include m.desktop_1360 {
       margin-top: 4rem;
@@ -179,6 +180,7 @@
       @include m.desktop_1020 {
           padding-bottom: 0;
           margin-top: 0;
+          transform: scale(.8) !important;
       }
     }
     
@@ -218,10 +220,13 @@
       width: 88%;
       transition: filter .5s ease-out;
       filter: grayscale(1);
-      &:hover {
-        transition: filter .5s ease-in;
-        filter: none;
-      }
+    }
+  }
+
+  .slider__item4.swiper-slide-next {
+    .sliderItemInfo4 {
+      transform: scale(1.4) !important;
+      filter: none !important;
     }
   }
 
@@ -230,6 +235,8 @@
         width: 100.5%;
     }
     .smp {
+      position: relative;
+      bottom: -.3rem;
       @include m.desktop_1020 {
         position: relative;
         bottom: -.5rem;
@@ -296,6 +303,9 @@
     }
     @include m.desktop_1020 {
       top: 50%;
+      right: -3rem !important;
+    }
+    @include m.desktop_1360 {
       right: -6rem !important;
     }
     img {
@@ -321,6 +331,9 @@
     }
     @include m.desktop_1020 {
       top: 50%;
+      left: -3rem !important;
+    }
+    @include m.desktop_1360 {
       left: -6rem !important;
     }
     img {
@@ -344,7 +357,7 @@
     }
     @include m.desktop_1020 {
       position: absolute;
-      bottom: -2rem !important;
+      bottom: -6rem !important;
     }
     @include m.desktop_1280 {
       bottom: -7rem !important;

@@ -182,6 +182,9 @@
     margin-top: 3rem;
     text-align: center;
     width: 100%;
+    @include m.phone_375 {
+        padding-top: 2rem;
+    }
     @include m.desktop_1020 {
         margin-bottom: 3rem;
     }
@@ -255,6 +258,9 @@
     // max-width: v.$max-width;
     width: 100%;
     // background-color: red;
+    @include m.phone_375 {
+        padding-top: 3rem;
+    }
     @include m.tablet_760 {
         max-width: 55rem;
     }
@@ -467,10 +473,10 @@
         bottom: 2.5rem !important;
     }
     @include m.phone_375 {
-        bottom: 1.5rem !important;
+        bottom: 5.5rem !important;
     }
     @include m.phone_414 {
-        bottom: .5rem !important;
+        bottom: 3rem !important;
     }
     @include m.desktop_1020 {
         bottom: 5rem !important;

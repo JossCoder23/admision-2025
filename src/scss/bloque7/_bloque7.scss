@@ -225,7 +225,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 
 .bloque7GridGroupToggle2 {
     display: grid;
-    height: 25rem;
+    height: 40rem;
     transition: height .5s ease;
     // height: 30rem;
 }
@@ -278,7 +278,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     @include m.desktop_1020 {
         display: grid;
         position: absolute;
-        top: 4.5rem;
+        top: 2.5rem;
         left: -1.3rem;
         // background-color: green;
         width: 100%;
@@ -295,7 +295,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
         top: 6.5rem;
     }
     @include m.desktop_1280 {
-        top: 4.5rem;
+        top: 2.5rem;
     }
 }
 
@@ -304,7 +304,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
     @include m.desktop_1020 {
         display: grid;
         position: absolute;
-        top: 4rem;
+        top: 1.5rem;
         left: -1.3rem;
         // background-color: green;
         width: 100%;
@@ -321,7 +321,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
         top: 6.5rem;
     }
     @include m.desktop_1280 {
-        top: 1rem;
+        top: .5rem;
     }
 }
 
@@ -411,7 +411,10 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 
 .bloque7GridDescriptionContainerSalud {
     @include m.desktop_1020 {
-        height: 42rem;
+        height: 49rem;
+    }
+    @include m.desktop_1280 {
+        height: 51rem;
     }
 }
 
@@ -422,7 +425,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
 .ul-5 {
     @include m.desktop_1020 {
         position: relative;
-        bottom: 7rem;
+        bottom: 2rem;
     }
 }
 
@@ -439,4 +442,11 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(255,12,41,1) 1
         bottom: 3rem;
     }
     
+}
+
+.ul-7 {
+    @include m.desktop_1020 {
+        position: relative;
+        bottom: 7rem;
+    }
 }
