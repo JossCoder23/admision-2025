@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque8{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    h3{
+      color:white;
+      font-size: 2rem;
+      text-align: center;
+      font-weight:500 ;
+      padding: 1rem 2rem;
+      @include m.desktop_1020 {
+        font-size:3rem;
+        padding: 3rem 2rem;
+      }
+    }
+  }
+   
+  //     @include m.phone_375 {
+  //     margin: 0;
+  //     display: flex;
+  //     align-items: center;
+  //     color: black;
+  //     justify-content: center;
+  //     font-weight:100 ;
