@@ -386,14 +386,18 @@
 
 .bloque1Admision {
     position: absolute;
-    bottom: 3.5rem;
+    //bottom: 3.8rem;
     // background-color: green;
-    width: 25rem;
+    bottom: 2.8rem;
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     height: 5rem;
+    justify-content: center;
+    align-items: center;
+   
     @include m.phone_375 {
-        bottom: 5.5rem;
+        bottom: 4.5rem;
     }
     @include m.desktop_1020 {
         width: 21rem;
@@ -441,11 +445,27 @@
         align-items: center;
         font-size: 1.8rem;
         color: white;
+        justify-content: center;
+          
+
+       
+        
         @include m.phone_375 {
             font-size: 2rem;
+            justify-content: center;
+          
+           
+        }
+        @include m.desktop_1020{
+            justify-content: flex-start;
         }
     }
     h3 {
+        @include m.phone_375 {
+            font-size: 2.5rem;
+           
+           
+        }
         @include m.desktop_1020 {
             font-size: 3rem;
             font-weight: 800;
@@ -459,12 +479,17 @@
     }
     h4 {
         font-weight: 400;
+      
+          
+           
+        }
         @include m.desktop_1020 {
             font-weight: 300;
         }
         @include m.desktop_1340 {
             font-size: 2.5rem;
-        }
+        
+        
     }
 }
 
